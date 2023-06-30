@@ -13,7 +13,7 @@ Users/Admin should be able to:
 
 ## Screenshots
 
-![](./app/design/maquette/Home-AdminSide.png)
+![](./app/design/Maquette/Home-AdminSide.png)
 
 
 ## Built with
