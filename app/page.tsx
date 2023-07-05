@@ -7,8 +7,8 @@ export const metadata = {
 export default function HomePage() {
   return (
     <div>
-      <h1>Hello, Home page!</h1>
-      <Link href="/dashboard">Dashboard</Link>
+      <h1>Bonjour John</h1>
+      {/* <Link href="/dashboard">Dashboard</Link> */}
     </div>
   )
 }
