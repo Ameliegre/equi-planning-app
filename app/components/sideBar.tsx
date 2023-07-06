@@ -4,9 +4,11 @@ import { Box, Text } from '@chakra-ui/react'
 
 function SideBar() {
     return (
-        <Box backgroundColor='white' h={'100vh'} w={'280px'} margin={5} borderRadius={'md'}>
+        <nav>
+            <Box backgroundColor='white' h={'100vh'} w={'280px'} margin={5} borderRadius={'md'}>
            
-        </Box>
+           </Box>
+        </nav>
     )
 }
 

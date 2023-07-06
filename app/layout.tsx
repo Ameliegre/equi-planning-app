@@ -17,7 +17,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="fr">
+      <head>
+        <title>Equi-planning</title>
+        <meta name="description" content="Horse stable management websites"/>
+      </head>
       <body className={montserrat.className}>
         <Providers>
           <Flex direction={'row'}>
