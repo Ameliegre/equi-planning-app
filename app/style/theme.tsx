@@ -20,6 +20,9 @@ const theme = extendTheme({
     normal: 400,
     semibold: 600
   },
+  radii:{
+    md: '5px',
+  },
   styles: {
     global: {
       body: {

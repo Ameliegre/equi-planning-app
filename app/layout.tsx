@@ -1,8 +1,10 @@
 'use client'
 
 import { Providers } from "./providers";
+import { Flex } from '@chakra-ui/react'
 import Header from './components/header'
 import { Montserrat } from 'next/font/google';
+import SideBar from "./components/sideBar";
 
 const montserrat = Montserrat({
   weight:['400','600'],
@@ -18,10 +20,13 @@ export default function RootLayout({
     <html lang="en">
       <body className={montserrat.className}>
         <Providers>
-          <div>
-            <Header/>
-            {children}
-          </div>
+          <Flex direction={'row'}>
+            <SideBar/>
+            <Flex direction={'column'} flex='1'>
+              <Header/>
+              {children}
+            </Flex>
+          </Flex>
         </Providers>
       </body>
     </html>

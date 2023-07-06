@@ -1,14 +1,11 @@
-import Link from 'next/link';
-
-export const metadata = {
-  title: 'Next.js',
-};
+'use client'
+import { Box } from '@chakra-ui/react';
 
 export default function HomePage() {
   return (
-    <div>
+    <Box>
       <h1>Bonjour John</h1>
       {/* <Link href="/dashboard">Dashboard</Link> */}
-    </div>
+    </Box>
   )
 }
