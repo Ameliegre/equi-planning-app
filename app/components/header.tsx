@@ -1,10 +1,12 @@
+'use client'
 import React from 'react'
+import { Box, Text } from '@chakra-ui/react'
 
 function Header() {
     return (
-        <div>
-            <h1>HEADER</h1>
-        </div>
+        <Box>
+            <Text fontSize='xl' color='notificationRed'>HEADER</Text>
+        </Box>
     )
 }
 

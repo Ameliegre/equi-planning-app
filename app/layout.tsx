@@ -1,3 +1,5 @@
+'use client'
+
 import { Providers } from "./providers";
 import Header from './components/header'
 import { Montserrat } from 'next/font/google';
@@ -13,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" >
+    <html lang="en">
       <body className={montserrat.className}>
         <Providers>
           <div>
