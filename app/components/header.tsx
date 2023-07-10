@@ -34,7 +34,7 @@ function Header() {
                                 <Image pr={5} src={param.src} alt='bouton paramètres'/>
                                 <Text fontSize={'14px'}>Paramètres</Text>
                             </MenuItem>
-                            <MenuItem as='a' href='#'>
+                            <MenuItem as='a' href='/contact'>
                                 <Image pr={5} src={ring.src} alt='bouton support'/>
                                 <Text fontSize={'14px'}>Support</Text>
                             </MenuItem>

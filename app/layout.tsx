@@ -1,10 +1,17 @@
-'use client'
-
 import { Providers } from "./providers";
-import { Flex } from '@chakra-ui/react'
 import Header from './components/header'
 import { Montserrat } from 'next/font/google';
 import SideBar from "./components/sideBar";
+import { Metadata } from 'next'
+ 
+export const metadata: Metadata = {
+  title: {
+    template : '%s | EquiPlanning',
+    default: 'EquiPlanning '
+  },
+  description: 'Horse stable management websites',
+  authors: [{ name: 'Amélie', url: 'https://github.com/Ameliegre' }]
+}
 
 const montserrat = Montserrat({
   weight:['400','600'],
@@ -18,19 +25,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr">
-      <head>
-        <title>Equi-planning</title>
-        <meta name="description" content="Horse stable management websites"/>
-      </head>
       <body className={montserrat.className}>
         <Providers>
-          <Flex direction={'row'}>
+          <main>
             <SideBar/>
-            <Flex direction={'column'} flex='1'>
+            <section>
               <Header/>
               {children}
-            </Flex>
-          </Flex>
+            </section>
+          </main>
         </Providers>
       </body>
     </html>

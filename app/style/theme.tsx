@@ -28,6 +28,15 @@ const theme = extendTheme({
       body: {
         backgroundColor: 'grey',
       },
+      main: {
+        display:'flex',
+        flexDirection:'row'
+      },
+      section:{
+        display:'flex',
+        flexDirection:'column',
+        flex:1
+      },
       h1: {
         fontSize: ['24px'],
         fontWeight: 'normal',
