@@ -13,29 +13,29 @@ function Header() {
     return (
         <header>
             <Flex justifyContent={'space-between'} alignItems={'center'} backgroundColor='white' h={'100px'} p={5} marginY={5} marginRight={5} borderRadius={'md'}>
-                <Image h={'70px'} w={'250px'} src={logo.src} alt='equi-planning' />
+                <Image h={'70px'} w={'250px'} src={logo.src} alt='equi-planning'/>
                 <Stack spacing={-6} direction='row'>
                     <Button backgroundColor='white' color={'iconColor'} px={3} as='a' href='/'>
-                        <Image boxSize='20px' color={'iconColor'} aria-label='homeBtn' src={home.src} />
+                        <Image boxSize='20px' color={'iconColor'} aria-label='homeBtn' src={home.src}/>
                     </Button>
                     <Button backgroundColor='white' color={'iconColor'} px={3}>
-                        <Image boxSize='20px' aria-label='bellBtn' src={bell.src} />
+                        <Image boxSize='20px' aria-label='bellBtn' src={bell.src}/>
                     </Button>
                     <Menu>
                         <MenuButton as={Button} backgroundColor='white' color={'iconColor'} px={3}>
-                            <Image boxSize='20px' aria-label='settingsBtn' src={settings.src} />
+                            <Image boxSize='20px' aria-label='settingsBtn' src={settings.src}/>
                         </MenuButton>
                         <MenuList display={'flex'} flexDirection={'column'}>
                             <MenuItem as='a' href='#'>
-                                <Image pr={5} src={profil.src} alt='bouton profil'/>
+                                <Image htmlHeight={'40px'} htmlWidth={'40px'} pr={5} src={profil.src} alt='bouton profil'/>
                                 <Text fontSize={'14px'}>Mon Compte</Text>
                             </MenuItem>
                             <MenuItem as='a' href='#'>
-                                <Image pr={5} src={param.src} alt='bouton paramètres'/>
+                                <Image htmlHeight={'40px'} htmlWidth={'40px'} pr={5} src={param.src} alt='bouton paramètres'/>
                                 <Text fontSize={'14px'}>Paramètres</Text>
                             </MenuItem>
-                            <MenuItem as='a' href='/contact'>
-                                <Image pr={5} src={ring.src} alt='bouton support'/>
+                            <MenuItem as='a' href='/support'>
+                                <Image htmlHeight={'40px'} htmlWidth={'40px'} pr={5} src={ring.src} alt='bouton support'/>
                                 <Text fontSize={'14px'}>Support</Text>
                             </MenuItem>
                         </MenuList>
@@ -43,7 +43,6 @@ function Header() {
                 </Stack>
             </Flex>
         </header>
-        
     )
 }
 

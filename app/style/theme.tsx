@@ -6,6 +6,7 @@ const theme = extendTheme({
     white:'#FFFFFF',
     black:'#000000',
     greenNature:'#127D64',
+    greenTransparent:'#127D6412',
     greenDarkmode:'#13AE89',
     notificationRed:'#F21673',
     iconColor:'#586A84',
@@ -42,6 +43,12 @@ const theme = extendTheme({
         fontWeight: 'normal',
         letterSpacing: '-2%',
         color: 'black'
+      },
+      h2:{
+        fontSize: ['24px'],
+        color: 'greenNature',
+        fontWeight: 'semibold',
+        letterSpacing: '1.92px'
       }
     }
   }
