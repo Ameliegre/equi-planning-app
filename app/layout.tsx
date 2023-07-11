@@ -7,7 +7,7 @@ import { Metadata } from 'next'
 export const metadata: Metadata = {
   title: {
     template : '%s | EquiPlanning',
-    default: 'EquiPlanning '
+    default: 'EquiPlanning'
   },
   description: 'Horse stable management websites',
   authors: [{ name: 'Amélie', url: 'https://github.com/Ameliegre' }]
