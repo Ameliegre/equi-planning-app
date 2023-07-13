@@ -1,4 +1,22 @@
-import { extendTheme } from '@chakra-ui/react'
+import { extendTheme, defineStyleConfig } from '@chakra-ui/react'
+
+const Button = defineStyleConfig({
+  baseStyle: {
+    fontWeight: 'bold',
+    textTransform: 'uppercase',
+    borderRadius: 'base', // <-- border radius is same for all variants and sizes
+  },
+})
+
+const Image = defineStyleConfig({
+  sizes: {
+    sm: {
+      fontSize: 'sm',
+      px: 4, // <-- px is short for paddingLeft and paddingRight
+      py: 3, // <-- py is short for paddingTop and paddingBottom
+    },
+  }
+})
 
 const theme = extendTheme({
   colors: {
@@ -51,7 +69,11 @@ const theme = extendTheme({
         letterSpacing: '1.92px'
       }
     }
-  }
+  },
+  components: {
+    Button,
+    Image
+  },
 })
 
 export default theme
