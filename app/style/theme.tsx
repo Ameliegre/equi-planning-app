@@ -21,6 +21,7 @@ const Image = defineStyleConfig({
 const theme = extendTheme({
   colors: {
     grey:'#EFEFEF',
+    lightGrey:'#F5F5F5',
     white:'#FFFFFF',
     black:'#000000',
     greenNature:'#127D64',
@@ -41,6 +42,7 @@ const theme = extendTheme({
   },
   radii:{
     md: '5px',
+    lg: '10px',
   },
   styles: {
     global: {
