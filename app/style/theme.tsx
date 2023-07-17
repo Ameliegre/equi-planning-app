@@ -1,4 +1,4 @@
-import { extendTheme, defineStyleConfig } from '@chakra-ui/react'
+import { extendTheme, defineStyleConfig, background } from '@chakra-ui/react'
 
 const Button = defineStyleConfig({
   baseStyle: {
@@ -49,9 +49,28 @@ const theme = extendTheme({
       body: {
         backgroundColor: 'grey',
       },
+      header: {
+        height:'100px',
+        padding: 5,
+        marginY:5,
+        marginRight:5,
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        backgroundColor: 'white',
+        borderRadius: 'md'
+      },
       main: {
         display:'flex',
-        flexDirection:'row'
+        flexDirection:'row',
+        height:'95vh'
+      },
+      aside: {
+        backgroundColor: 'white',
+        height:'100%',
+        width:'280px',
+        margin: 5,
+        borderRadius: 'md'
       },
       section:{
         display:'flex',

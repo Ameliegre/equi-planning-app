@@ -10,8 +10,8 @@ import { Switch } from '@chakra-ui/react'
 function SideBar() {
     return (
         <aside>
-            <Box backgroundColor='white' h={'fit-content'} w={'280px'} margin={5} borderRadius={'md'}>
-                <Flex direction={'column'} alignItems={'center'} p={6}>
+            <Flex direction={'column'} alignItems={'center'} p={6}>
+                <Box>
                     <Flex direction={'row'} alignItems={'center'} columnGap={3}>
                         <Image src={avatar.src} alt='avatar utilisateur'/>
                         <Box w={'150px'}>
@@ -47,21 +47,21 @@ function SideBar() {
                                 <Text fontWeight={'normal'} pl={4} textTransform={'none'}>Gestion des activités</Text>
                             </Button>
                     </VStack>
-                    <VStack pt={'90%'}>
-                        <Button backgroundColor={'transparent'} justifyContent={'flex-start'}>
-                                <Icon as={FiLogOut} color={'greenNature'} w={'22px'} h={'22px'}/>
-                                <Text fontWeight={'normal'} pl={4} textTransform={'none'}>Logout</Text>
-                        </Button>
-                        <FormControl display='flex' alignItems='center'>
-                            <FormLabel htmlFor='lightMode' mb='0' display={'flex'} flexDirection={'row'}>
-                                <Icon as={BsSun} color={'greenNature'} w={'22px'} h={'22px'} mr={4}/>
-                                <Text>Light mode</Text>
-                            </FormLabel>
-                            <Switch id='lightMode' colorScheme='green'/>
-                        </FormControl>
-                    </VStack>
-                </Flex>
-           </Box>
+                </Box>
+                <VStack>
+                    <Button backgroundColor={'transparent'} justifyContent={'flex-start'}>
+                            <Icon as={FiLogOut} color={'greenNature'} w={'22px'} h={'22px'}/>
+                            <Text fontWeight={'normal'} pl={4} textTransform={'none'}>Logout</Text>
+                    </Button>
+                    <FormControl display='flex' alignItems='center'>
+                        <FormLabel htmlFor='lightMode' mb='0' display={'flex'} flexDirection={'row'}>
+                            <Icon as={BsSun} color={'greenNature'} w={'22px'} h={'22px'} mr={4}/>
+                            <Text>Light mode</Text>
+                        </FormLabel>
+                        <Switch id='lightMode' colorScheme='green'/>
+                    </FormControl>
+                </VStack>
+            </Flex>
         </aside>
     )
 }
