@@ -10,7 +10,7 @@ import { Switch } from '@chakra-ui/react'
 function SideBar() {
     return (
         <aside>
-            <Flex direction={'column'} alignItems={'center'} p={6}>
+            <Flex direction={'column'} justifyContent={'space-between'} alignItems={'center'} p={6}>
                 <Box>
                     <Flex direction={'row'} alignItems={'center'} columnGap={3}>
                         <Image src={avatar.src} alt='avatar utilisateur'/>
@@ -25,30 +25,30 @@ function SideBar() {
                         </InputLeftElement>
                         <Input aria-label='recherche' focusBorderColor='greenNature' _placeholder={{ color: 'black' }} variant='filled' backgroundColor={'lightGrey'} type='tel' placeholder='Rechercher...' />
                     </InputGroup>
-                    <VStack gap={8}>
-                            <Button backgroundColor={'transparent'}>
+                    <VStack gap={8} justifyContent={'flex-start'}>
+                            <Button backgroundColor={'transparent'} w={'230px'}>
                                 <Icon as={FaUser} color={'greenNature'} w={'20px'} h={'18px'}/>
                                 <Text fontWeight={'normal'} pl={4} textTransform={'none'}>Gestion des cavaliers</Text>
                             </Button>
-                            <Button backgroundColor={'transparent'}>
+                            <Button backgroundColor={'transparent'} w={'230px'}>
                                 <Icon as={FaHorseHead} color={'greenNature'} w={'24px'} h={'18px'}/>
                                 <Text fontWeight={'normal'} pl={4} textTransform={'none'}>Gestion des chevaux</Text>
                             </Button>
-                            <Button backgroundColor={'transparent'}>
+                            <Button backgroundColor={'transparent'} w={'230px'}>
                                 <Icon as={FaCalendarAlt} color={'greenNature'} w={'20px'} h={'20px'}/>
                                 <Text fontWeight={'normal'} pl={4} textTransform={'none'}>Gestion des reprises</Text>
                             </Button>
-                            <Button backgroundColor={'transparent'} display={'flex'} justifyContent={'flex-start'}>
+                            <Button backgroundColor={'transparent'} w={'230px'}>
                                 <Icon as={FaEuroSign} color={'greenNature'} w={'20px'} h={'22px'}/>
                                 <Text fontWeight={'normal'} pl={4} textTransform={'none'}>Gestion administrative</Text>
                             </Button>
-                            <Button backgroundColor={'transparent'}>
+                            <Button backgroundColor={'transparent'} w={'230px'}>
                                 <Icon as={FaTrophy} color={'greenNature'} w={'22px'} h={'22px'}/>
                                 <Text fontWeight={'normal'} pl={4} textTransform={'none'}>Gestion des activités</Text>
                             </Button>
                     </VStack>
                 </Box>
-                <VStack>
+                <VStack flex={1}>
                     <Button backgroundColor={'transparent'} justifyContent={'flex-start'}>
                             <Icon as={FiLogOut} color={'greenNature'} w={'22px'} h={'22px'}/>
                             <Text fontWeight={'normal'} pl={4} textTransform={'none'}>Logout</Text>

@@ -63,14 +63,15 @@ const theme = extendTheme({
       main: {
         display:'flex',
         flexDirection:'row',
-        height:'95vh'
+       
       },
       aside: {
         backgroundColor: 'white',
-        height:'100%',
+        height:'fit-content',
         width:'280px',
         margin: 5,
-        borderRadius: 'md'
+        borderRadius: 'md',
+        cursor: 'pointer'
       },
       section:{
         display:'flex',

@@ -1,40 +1,38 @@
 'use client'
 import React from 'react'
-import { Flex, Image, Menu, MenuButton, MenuList, MenuItem, Button, Stack, Text } from '@chakra-ui/react'
+import { Image, Menu, MenuButton, MenuList, MenuItem, Button, Stack, Text, Icon } from '@chakra-ui/react'
 import logo from '../design/logo_EQUI-PLANNING.png'
-import settings from '../assets/gear-solid.svg'
-import bell from '../assets/bell-solid.svg'
-import home from '../assets/house-solid.svg'
-import profil from '../assets/profil.svg'
-import param from '../assets/gear-empty.svg'
-import ring from '../assets/ring.svg'
+import { HiHome } from 'react-icons/hi'
+import { BsBellFill, BsFillGearFill } from 'react-icons/bs'
+import { RxAvatar, RxGear } from 'react-icons/rx'
+import { FaRegLifeRing } from 'react-icons/fa'
 
 function Header() {
     return (
         <header>
             <Image h={'70px'} w={'250px'} src={logo.src} alt='equi-planning'/>
             <Stack spacing={-6} direction='row'>
-                <Button backgroundColor='white' color={'iconColor'} px={3} as='a' href='/'>
-                    <Image boxSize='20px' color={'iconColor'} aria-label='homeBtn' src={home.src}/>
+                <Button backgroundColor='white' px={3} as='a' href='/'>
+                    <Icon as={HiHome} color='iconColor' boxSize='24px'/>
                 </Button>
                 <Button backgroundColor='white' color={'iconColor'} px={3}>
-                    <Image boxSize='20px' aria-label='bellBtn' src={bell.src}/>
+                    <Icon as={BsBellFill} color='iconColor' boxSize='22px'/>
                 </Button>
                 <Menu>
                     <MenuButton as={Button} backgroundColor='white' color={'iconColor'} px={3}>
-                        <Image boxSize='20px' aria-label='settingsBtn' src={settings.src}/>
+                        <Icon as={BsFillGearFill} color='iconColor' boxSize='22px'/>
                     </MenuButton>
                     <MenuList display={'flex'} flexDirection={'column'}>
                         <MenuItem as='a' href='#'>
-                            <Image htmlHeight={'40px'} htmlWidth={'40px'} pr={5} src={profil.src} alt='bouton profil'/>
+                            <Icon as={RxAvatar} color='iconColor' w='40px' h={'30px'} pr={5}/>
                             <Text fontSize={'14px'}>Mon Compte</Text>
                         </MenuItem>
                         <MenuItem as='a' href='#'>
-                            <Image htmlHeight={'40px'} htmlWidth={'40px'} pr={5} src={param.src} alt='bouton paramètres'/>
+                            <Icon as={RxGear} color='iconColor' w='40px' h={'30px'} pr={5}/>
                             <Text fontSize={'14px'}>Paramètres</Text>
                         </MenuItem>
                         <MenuItem as='a' href='/support'>
-                            <Image htmlHeight={'40px'} htmlWidth={'40px'} pr={5} src={ring.src} alt='bouton support'/>
+                            <Icon as={FaRegLifeRing} color='iconColor' w='40px' h={'30px'} pr={5}/>
                             <Text fontSize={'14px'}>Support</Text>
                         </MenuItem>
                     </MenuList>
