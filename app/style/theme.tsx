@@ -53,7 +53,6 @@ const theme = extendTheme({
         height:'100px',
         padding: 5,
         marginY:5,
-        marginRight:5,
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',
@@ -76,7 +75,8 @@ const theme = extendTheme({
       section:{
         display:'flex',
         flexDirection:'column',
-        flex:1
+        flex:1,
+        paddingRight: 5,
       },
       h1: {
         fontSize: ['24px'],
@@ -86,9 +86,9 @@ const theme = extendTheme({
       },
       h2:{
         fontSize: ['24px'],
-        color: 'greenNature',
+        color: 'black',
         fontWeight: 'semibold',
-        letterSpacing: '1.92px'
+        textTransform: 'uppercase'
       }
     }
   },
