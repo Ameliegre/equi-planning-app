@@ -1,6 +1,9 @@
 'use client'
-import { Box, Card, Text, CardHeader, CardBody, Grid, GridItem, Icon, Flex } from '@chakra-ui/react'
+import { Box, Card, Text, CardHeader, CardBody, Grid, GridItem, Icon, Flex, Stack, Select, InputGroup, Input, InputRightElement } from '@chakra-ui/react'
 import { FaBirthdayCake } from 'react-icons/fa'
+import { GiHorseshoe, GiNewBorn } from 'react-icons/gi'
+import { PiMedalFill } from 'react-icons/pi'
+import { BsPlus } from 'react-icons/bs'
 
 export default function HomePage() {
   return (
@@ -12,11 +15,21 @@ export default function HomePage() {
             <CardHeader>
               <h2>informations importantes</h2>
             </CardHeader>
-            <CardBody py={0}>
-              <Flex alignItems={'center'} gap={4}>
-                <Icon as={FaBirthdayCake} color='iconColor' boxSize='24px'/>
-                <Text>Aujourd’hui, c’est l’anniversaire de Lucas alors on lui souhaite un joyeux anniversaire ! </Text>
-              </Flex>
+            <CardBody pt={0}>
+              <Stack spacing={5}>
+                <Flex alignItems={'center'} gap={4}>
+                  <Icon as={FaBirthdayCake} color='iconColor' boxSize='24px'/>
+                  <Text>Aujourd’hui, c’est l’anniversaire de Lucas alors on lui souhaite un joyeux anniversaire ! </Text>
+                </Flex>
+                <Flex alignItems={'center'} gap={4}>
+                  <Icon as={GiHorseshoe} color='iconColor' boxSize='24px'/>
+                  <Text>Bon anniversaire à Star du lac qui fête ses 12 ans,  apportez lui une carotte pour l’occasion !</Text>
+                </Flex>
+                <Flex alignItems={'center'} gap={4}>
+                  <Icon as={GiNewBorn} color='iconColor' boxSize='24px'/>
+                  <Text>Maggie a pointé le bout de son nez cette nuit ! C’est une jolie pouliche par l’étalon Stuart</Text>
+                </Flex>
+              </Stack>
             </CardBody>
           </Card>
         </GridItem>
@@ -26,7 +39,25 @@ export default function HomePage() {
               <h2>prochains évènements</h2>
             </CardHeader>
             <CardBody py={0}>
-              <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Text>
+              <Stack>
+                <Flex alignItems={'center'} gap={4} pb={5}>
+                  <Icon as={PiMedalFill} color='iconColor' boxSize='24px'/>
+                  <Text>Concours de saut le dimanche 12 juillet au centre équestre de la vallée, inscription ici !</Text>
+                </Flex>
+                <Flex>
+                  <Select placeholder='Type event' flex={1} pr={2}>
+                    <option value='option1'>Concours</option>
+                    <option value='option2'>Fête du club</option>
+                    <option value='option3'>Rentrée</option>
+                  </Select>
+                  <InputGroup flex={2}>
+                    <Input placeholder='Description event' />
+                    <InputRightElement>
+                    <Icon as={BsPlus} color='iconColor' boxSize='24px'/>
+                    </InputRightElement>
+                  </InputGroup>
+                </Flex>
+              </Stack>
             </CardBody>
           </Card>
         </GridItem>
