@@ -1,11 +1,16 @@
+'use client'
 import React from 'react'
-import Link from 'next/link';
+import { Card, CardBody } from '@chakra-ui/react'
 
 export default function RiderPage() {
     return(
-        <div>
-            <h1>Hello, Rider Page!</h1>
-            <Link href="/">Home</Link>
-        </div>
+        <>
+            <h1>Liste des cavaliers</h1>
+            <Card h={'100%'}>
+                <CardBody>
+
+                </CardBody>
+            </Card>
+        </>
     ) ;
 }

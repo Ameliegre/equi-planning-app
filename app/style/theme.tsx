@@ -4,7 +4,8 @@ const Button = defineStyleConfig({
   baseStyle: {
     fontWeight: 'bold',
     textTransform: 'uppercase',
-    borderRadius: 'base', // <-- border radius is same for all variants and sizes
+    borderRadius: 'base', 
+    backgroundColor: 'greenNature'
   },
 })
 
@@ -20,21 +21,27 @@ const Image = defineStyleConfig({
 
 const theme = extendTheme({
   colors: {
-    grey:'#EFEFEF',
-    lightGrey:'#F5F5F5',
+    gray: { 
+      50:'#EFEFEF',
+      500:'#586A84'
+    },
     white:'#FFFFFF',
     black:'#000000',
-    greenNature:'#127D64',
-    greenTransparent:'#127D6412',
-    greenDarkmode:'#13AE89',
-    notificationRed:'#F21673',
-    iconColor:'#586A84',
-    warning100:'#FFF2DA',
-    warning600:'#FFAA04',
-    success100:'#CAFBEC',
-    success600:'#0DA678',
-    danger100:'#FFE5EC',
-    danger600:'#FF316A'
+    green: {
+      100: '#CAFBEC',
+      600: '#0DA678',
+      700:'#13AE89',
+      800: '#127D64'
+    },
+    red:{
+      50: '#FFE5EC',
+      300: '#F21673',
+      400: '#FF316A'
+    },
+    yellow:{
+      100:'#FFF2DA',
+      400:'#FFAA04'
+    },
   },
   fontWeights: {
     normal: 400,
@@ -47,7 +54,7 @@ const theme = extendTheme({
   styles: {
     global: {
       body: {
-        backgroundColor: 'grey',
+        backgroundColor: 'gray.50',
       },
       header: {
         height:'100px',
@@ -62,11 +69,12 @@ const theme = extendTheme({
       main: {
         display:'flex',
         flexDirection:'row',
+        paddingRight: 5,
        
       },
       aside: {
         backgroundColor: 'white',
-        height:'fit-content',
+        height:'fill',
         width:'280px',
         margin: 5,
         borderRadius: 'md',
@@ -76,13 +84,13 @@ const theme = extendTheme({
         display:'flex',
         flexDirection:'column',
         flex:1,
-        paddingRight: 5,
       },
       h1: {
         fontSize: ['24px'],
         fontWeight: 'normal',
         letterSpacing: '-2%',
-        color: 'black'
+        color: 'black',
+        pb: 5
       },
       h2:{
         fontSize: ['24px'],

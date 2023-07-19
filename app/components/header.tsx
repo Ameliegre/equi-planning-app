@@ -13,26 +13,26 @@ function Header() {
             <Image h={'70px'} w={'250px'} src={logo.src} alt='equi-planning'/>
             <Stack spacing={-6} direction='row'>
                 <Button backgroundColor='white' px={3} as='a' href='/'>
-                    <Icon as={HiHome} color='iconColor' boxSize='24px'/>
+                    <Icon as={HiHome} color='gray.500' boxSize='24px'/>
                 </Button>
-                <Button backgroundColor='white' color={'iconColor'} px={3}>
-                    <Icon as={BsBellFill} color='iconColor' boxSize='22px'/>
+                <Button backgroundColor='white' color={'gray.500'} px={3}>
+                    <Icon as={BsBellFill} color='gray.500' boxSize='22px'/>
                 </Button>
                 <Menu>
-                    <MenuButton as={Button} backgroundColor='white' color={'iconColor'} px={3}>
-                        <Icon as={BsFillGearFill} color='iconColor' boxSize='22px'/>
+                    <MenuButton as={Button} backgroundColor='white' color={'gray.500'} px={3}>
+                        <Icon as={BsFillGearFill} color='gray.500' boxSize='22px'/>
                     </MenuButton>
                     <MenuList display={'flex'} flexDirection={'column'}>
                         <MenuItem as='a' href='#'>
-                            <Icon as={RxAvatar} color='iconColor' w='40px' h={'30px'} pr={5}/>
+                            <Icon as={RxAvatar} color='gray.500' w='40px' h={'30px'} pr={5}/>
                             <Text fontSize={'14px'}>Mon Compte</Text>
                         </MenuItem>
                         <MenuItem as='a' href='#'>
-                            <Icon as={RxGear} color='iconColor' w='40px' h={'30px'} pr={5}/>
+                            <Icon as={RxGear} color='gray.500' w='40px' h={'30px'} pr={5}/>
                             <Text fontSize={'14px'}>Paramètres</Text>
                         </MenuItem>
                         <MenuItem as='a' href='/support'>
-                            <Icon as={FaRegLifeRing} color='iconColor' w='40px' h={'30px'} pr={5}/>
+                            <Icon as={FaRegLifeRing} color='gray.500' w='40px' h={'30px'} pr={5}/>
                             <Text fontSize={'14px'}>Support</Text>
                         </MenuItem>
                     </MenuList>
