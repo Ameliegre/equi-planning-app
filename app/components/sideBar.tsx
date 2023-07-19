@@ -23,33 +23,33 @@ function SideBar() {
                     </Flex>
                     <InputGroup borderRadius={'xl'} marginY={12}>
                         <InputLeftElement pointerEvents='none'>
-                        <Icon as={FiSearch} color='greenNature'/>
+                        <Icon as={FiSearch} color='green.800'/>
                         </InputLeftElement>
-                        <Input aria-label='recherche' focusBorderColor='greenNature' _placeholder={{ color: 'black' }} variant='filled' backgroundColor={'lightGrey'} type='tel' placeholder='Rechercher...' />
+                        <Input aria-label='recherche' focusBorderColor='green.800' _placeholder={{ color: 'black' }} variant='filled' backgroundColor={'gray.50'} type='tel' placeholder='Rechercher...' />
                     </InputGroup>
                     <VStack gap={8} justifyContent={'flex-start'}>
                             <Link display={'flex'} justifyContent={'flex-start'} as={NextLink} href='/dashboard/riders' backgroundColor={'transparent'} w={'230px'}>
-                                <Icon as={FaUser} color={'greenNature'} w={'20px'} h={'18px'}/>
+                                <Icon as={FaUser} color={'green.800'} w={'20px'} h={'18px'}/>
                                 <Text fontWeight={'normal'} pl={4} textTransform={'none'}>Gestion des cavaliers</Text>
                             </Link>
                             <Link display={'flex'} justifyContent={'flex-start'} as={NextLink} href='/dashboard/horses' backgroundColor={'transparent'} w={'230px'}>
-                                <Icon as={FaHorseHead} color={'greenNature'} w={'24px'} h={'18px'}/>
+                                <Icon as={FaHorseHead} color={'green.800'} w={'24px'} h={'18px'}/>
                                 <Text fontWeight={'normal'} pl={4} textTransform={'none'}>Gestion des chevaux</Text>
                             </Link>
                             <Link display={'flex'} justifyContent={'flex-start'} as={NextLink} href='/dashboard/calendar' backgroundColor={'transparent'} w={'230px'}>
-                                <Icon as={FaCalendarAlt} color={'greenNature'} w={'20px'} h={'20px'}/>
+                                <Icon as={FaCalendarAlt} color={'green.800'} w={'20px'} h={'20px'}/>
                                 <Text fontWeight={'normal'} pl={4} textTransform={'none'}>Gestion des reprises</Text>
                             </Link>
                             <Link display={'flex'} justifyContent={'flex-start'} as={NextLink} href='/dashboard/invoices' backgroundColor={'transparent'} w={'230px'}>
-                                <Icon as={FaEuroSign} color={'greenNature'} w={'20px'} h={'22px'}/>
+                                <Icon as={FaEuroSign} color={'green.800'} w={'20px'} h={'22px'}/>
                                 <Text fontWeight={'normal'} pl={4} textTransform={'none'}>Gestion administrative</Text>
                             </Link>
                             <Link display={'flex'} justifyContent={'flex-start'} as={NextLink} href='/dashboard/activities' backgroundColor={'transparent'} w={'230px'}>
-                                <Icon as={FaTrophy} color={'greenNature'} w={'22px'} h={'22px'}/>
+                                <Icon as={FaTrophy} color={'green.800'} w={'22px'} h={'22px'}/>
                                 <Text fontWeight={'normal'} pl={4} textTransform={'none'}>Gestion des activités</Text>
                             </Link>
                             <Link display={'flex'} justifyContent={'flex-start'} as={NextLink} href='/login' backgroundColor={'transparent'}>
-                                <Icon as={FiLogOut} color={'greenNature'} w={'22px'} h={'22px'}/>
+                                <Icon as={FiLogOut} color={'green.800'} w={'22px'} h={'22px'}/>
                                 <Text fontWeight={'normal'} pl={4} textTransform={'none'}>Logout</Text>
                             </Link>
                     </VStack>
