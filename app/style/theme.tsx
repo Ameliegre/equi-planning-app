@@ -3,12 +3,11 @@ import { extendTheme, defineStyleConfig, background } from '@chakra-ui/react'
 const Button = defineStyleConfig({
   baseStyle: {
     fontWeight: 'normal',
-    textTransform: 'capitalize',
     borderRadius: 'base', 
   },
   sizes: {
-    lg: {
-      fontSize: 'lg',
+    md: {
+      fontSize: 'md',
       px: 4, 
     },
   },
@@ -26,23 +25,46 @@ const Button = defineStyleConfig({
       _hover: {
         bg: 'gray.200'
       }
+    },
+    icons: {
+      _hover: {
+        bg: 'gray.200'
+      }
     }
   },
   defaultProps: {
-    size: 'lg',
+    size: 'md',
     variant: 'primary',
   },
   
 })
 
 const Input = defineStyleConfig({
+  baseStyle: {
+    fontWeight: 'normal',
+    textTransform: 'capitalize',
+    borderRadius: 'base', 
+  },
   sizes: {
-    sm: {
-      fontSize: 'sm',
+    md: {
+      fontSize: 'md',
       px: 4, // <-- px is short for paddingLeft and paddingRight
       py: 3, // <-- py is short for paddingTop and paddingBottom
     },
-  }
+  },
+  variants: {
+    textSearch: {
+      bg: 'gray.50',
+      _placeholder: {
+        color: 'black'
+      }
+    },
+  },
+  defaultProps: {
+    size: 'md',
+    variant: 'textSearch',
+  },
+  
 })
 
 const theme = extendTheme({
