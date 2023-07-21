@@ -13,7 +13,7 @@ function SideBar() {
             <Flex direction={'column'} justifyContent={'space-between'} alignItems={'flex-start'} p={6}>
                 <Box>
                     <Flex direction={'row'} alignItems={'center'} columnGap={3}>
-                        <Image src={avatar.src} alt='avatar utilisateur'/>
+                        <Image src={avatar.src} alt='avatar utilisateur' h={'56px'} w={'56px'}/>
                         <Box w={'150px'}>
                             <Text fontWeight={'semibold'}>Prénom NOM</Text>
                             <Text>email</Text>
@@ -21,7 +21,7 @@ function SideBar() {
                     </Flex>
                     <InputGroup borderRadius={'xl'} marginY={12}>
                         <InputLeftElement pointerEvents='none'>
-                        <Icon color='green.800' boxSize='22px'><FontAwesomeIcon icon={faMagnifyingGlass}/></Icon>
+                            <Icon color='green.800' boxSize='22px'><FontAwesomeIcon icon={faMagnifyingGlass}/></Icon>
                         </InputLeftElement>
                         <Input aria-label='recherche' focusBorderColor='green.800' variant='filled' type='text' placeholder='Rechercher...' />
                     </InputGroup>

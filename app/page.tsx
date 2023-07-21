@@ -26,7 +26,6 @@ export default function HomePage() {
                 </Flex>
                 <Flex alignItems={'center'} gap={4}>
                 <Icon color='gray.500' boxSize='24px'><FontAwesomeIcon icon={faBaby}/></Icon>
-                  {/* <Icon as={GiNewBorn} color='gray.500' boxSize='24px'/> */}
                   <Text>Maggie a pointé le bout de son nez cette nuit ! C’est une jolie pouliche par l’étalon Stuart</Text>
                 </Flex>
               </Stack>
@@ -45,13 +44,13 @@ export default function HomePage() {
                   <Text>Concours de saut le dimanche 12 juillet au centre équestre de la vallée, inscription ici !</Text>
                 </Flex>
                 <Flex>
-                  <Select placeholder='Type event' flex={1} pr={2}>
+                  <Select aria-label='select event' placeholder='Type event' flex={1} pr={2}>
                     <option value='option1'>Concours</option>
                     <option value='option2'>Fête du club</option>
                     <option value='option3'>Rentrée</option>
                   </Select>
                   <InputGroup flex={2}>
-                    <Input placeholder='Description event' />
+                    <Input placeholder='Description event' aria-label='description event' />
                     <InputRightElement>
                     
                     <Icon> 

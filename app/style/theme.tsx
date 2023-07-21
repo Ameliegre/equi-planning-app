@@ -125,7 +125,7 @@ const theme = extendTheme({
       },
       aside: {
         backgroundColor: 'white',
-        height:'fill',
+        height:'calc(100vh - 2.5rem)',
         width:'280px',
         margin: 5,
         borderRadius: 'md',

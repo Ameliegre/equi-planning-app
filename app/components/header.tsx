@@ -8,17 +8,17 @@ import { faCircleUser, faGear, faHouse, faBell, faLifeRing } from '@fortawesome/
 function Header() {
     return (
         <header>
-            <Image h={'70px'} w={'250px'} src={logo.src} alt='equi-planning'/>
+            <Image h={'78px'} w={'259px'} src={logo.src} alt='titre equi-planning'/>
             <Stack spacing={-6} direction='row'>
-                <Button backgroundColor='white' variant={'icons'} px={3} as='a' href='/'>
+                <Button aria-label='revenir à laccueil' backgroundColor='white' variant={'icons'} px={3} as='a' href='/'>
                     <Icon color='gray.500' boxSize='22px'><FontAwesomeIcon icon={faHouse}/></Icon>
                 </Button>
-                <Button backgroundColor='white' variant={'icons'} px={3}>
+                <Button aria-label='voir les notifications' backgroundColor='white' variant={'icons'} px={3}>
                     <Icon color='gray.500' boxSize='22px'><FontAwesomeIcon icon={faBell}/></Icon>
                 </Button>
                 <Menu>
-                    <MenuButton as={Button} backgroundColor='white' variant={'icons'} px={3}>
-                        <Icon color='gray.500' w='40px' h={'30px'} pr={5}><FontAwesomeIcon icon={faGear}/></Icon>
+                    <MenuButton aria-label='acceder aux paramètres' as={Button} backgroundColor='white' variant={'icons'} px={3}>
+                        <Icon color='gray.500' boxSize='22px'><FontAwesomeIcon icon={faGear}/></Icon>
                     </MenuButton>
                     <MenuList display={'flex'} flexDirection={'column'}>
                         <MenuItem as='a' href='#'>
